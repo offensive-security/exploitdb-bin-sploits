@@ -1,0 +1,127 @@
+<PACKAGE>
+	<TITLE></TITLE>
+    	<APPLICATION>RealArcade</APPLICATION>
+	<ACTION>download</ACTION>
+	<TARGET>My Games</TARGET>
+	<EXP_DATE>06/13/2001 10:51</EXP_DATE>
+	<PROVIDER>
+		<AUTHOR>RealArcade</AUTHOR>
+		<NAME>RealNetworks</NAME>
+		<URL>http://www.real.com</URL>
+		<COPYRIGHT>Copyright 2001, RealNetworks</COPYRIGHT>
+		<CONTACT>RealArcade@real.com</CONTACT>
+	</PROVIDER>	
+	<SERVER>		
+                <!---
+		    =================================================== 
+
+		    =================================================== 
+                -->
+		<NAME>RealGames Server </NAME>
+		<DESC>RealGames Server</DESC>
+		<NETNAME>games-dl.real.com</NETNAME>
+		<LOCATION>/gameconsole/games/demorgses/%f</LOCATION> <!-- %f = filename, %fid=Track  id, %lid = TrackList ID, %pid= package id -->
+		<KEY>Not used in Beta1</KEY>
+	</SERVER>
+	<GAMELIST>
+		<GAME>
+			<ID></ID>
+			<!-- THIS IS THE TITLE OF THE GAME THAT SHOWS UP DURING THE DOWNLOAD OF THE GAME-->
+			<NAME>Flux</NAME>
+			<!-- 
+			    =================================================== 
+			    THE GAME ID FOR THIS GAME
+			    ===================================================
+			-->
+			<GAMEID>950258D1-7ABD-4afc-8886-449B98CE8224</GAMEID>
+			<VERSION>1.0 Demo RGI</VERSION>
+			<TYPE>demo</TYPE>
+			<GENRE>Puzzle and Board</GENRE>
+
+
+
+<!--
+MODIFY
+-->
+			<FILENAME>../../../../../../folder/myfile.txt</FILENAME>
+
+
+
+
+			<SIZE>7721053</SIZE>
+			<!-- 
+			    =================================================== 
+			    THIS IS THE LOCATION TO DOWNLOAD THE MEZZANINE FROM 
+			    ===================================================
+			-->
+			<MEZZANINE>http://games-dl.real.com/gameconsole/games/demo/mezzanines/fluxdemo.mez</MEZZANINE>
+
+			<!-- 
+			    =================================================== 
+			    THIS IS THE LOCATION TO DOWNLOAD THE EXIT AD FROM 
+			    ===================================================
+			-->
+
+	    	        <ADNAME>fluxle.png</ADNAME>
+	                <ADURL>http://games-dl.real.com/gameconsole/games/demorgses/exitads/fluxle.png</ADURL>
+
+			<!--
+			    =================================================== 
+			    THIS IS THE GAME FIND DATA FOR THE GAME THAT YOU ARE DOWNLOADING
+			    IT SHOULD HAVE ALL THE INFO NEEDED TO FIND THE GAME AFTER INSTALL.
+			    =================================================== 
+			-->
+		<METADATA>
+
+    <PROP name = "GameID" type = "text" value = "950258D1-7ABD-4afc-8886-449B98CE8224" />
+    <PROP name = "Version" type = "text" value = "1.0 Demo RGI" />
+    <PROP name = "GameName" type = "text" value = "Flux" />
+    <PROP name = "GameType" type = "text" value = "Demo" />
+    <PROP name = "MultiID" type = "text" value = "blank" />
+    <PROP name = "Data" type = "group">
+        <PROP name = "AUComponent" type = "text" value = "fb197151" />
+        <PROP name = "Caption" type = "text" value = "An awesome elimination puzzle game with great music, excellent gameplay.  Best of all, the bigger your move, the bigger the pieces explode!" />
+        <PROP name = "PublisherID" type = "number" value = "0" />
+        <PROP name = "DeveloperID" type = "number" value = "14" />
+        <PROP name = "MezzanineURL" type = "url" value = "http://games-dl.real.com/gameconsole/games/demo/mezzanines/fluxdemo.mez" />
+        <PROP name = "RealAPISupport" type = "flag" value = "0" />
+        <PROP name = "StartOptions" type = "text" value = "" />
+        <PROP name = "LaunchINIGameName" type = "text" value = "" />
+        <PROP name = "FindInRegistry" type = "number" value = "1" />
+        <PROP name = "FindKeys" type = "group">
+            <PROP name = "KeyCount" type = "number" value = "2" />
+            <PROP name = "Key1" type = "text" value = "Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Flux.fb197151\1.0;InstallPath" />
+            <PROP name = "Key2" type = "text" value = "Registry;HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Flux.fb197151\1.0;Executable" />
+            <PROP name = "LaunchCommand" type = "text" value = "${Key1}${Key2}" />
+            <PROP name = "LaunchPath" type = "text" value = "${Key1}" />
+            <PROP name = "UninstallCommand" type = "text" value = "<?XZIP?></?XZIP?>" />
+            <PROP name = "RegMustNotExist" type = "text" value = "HKEY_CLASSES_ROOT\SOFTWARE\RealNetworks\Games\Flux.fb197151\1.0;LicenseKey" />
+        </PROP>
+        <PROP name = "Multiplayer" type = "flag" value = "0" />
+        <PROP name = "DiskSearchInfo" type = "group">
+            <PROP name = "FileName" type = "text" value = "FluxLE.exe" />
+            <PROP name = "FileVersion" type = "text" value = "0" />
+            <PROP name = "FileSize" type = "number" value = "" />
+        </PROP>
+        <PROP name = "SystemRequirements" type = "group">
+            <PROP name = "OperatingSystem" type = "text" value = "Windows95, Windows98, WindowsME, WindowsXP" />
+            <PROP name = "MinProcessorType" type = "text" value = "P-133" />
+            <PROP name = "MinDiskSpaceRun" type = "number" value = "8388608" />
+            <PROP name = "MinDiskSpaceInstall" type = "number" value = "14680064" />
+            <PROP name = "MinMemory" type = "number" value = "16777216" />
+            <PROP name = "Requires3DHardware" type = "flag" value = "0" />
+            <PROP name = "MinDirectXVersion" type = "number" value = "7.0" />
+            <PROP name = "SinglePlayerMinimumConnectionSpeed" type = "number" value = "N/A" />
+            <PROP name = "MultiPlayerMinimumConnectionSpeed" type = "number" value = "N/A" />
+            <PROP name = "SupportsEAXAudio" type = "flag" value = "0" />
+            <PROP name = "SupportsDolbyAudio" type = "flag" value = "0" />
+        </PROP>
+    </PROP>
+
+		</METADATA>
+
+		</GAME>
+	</GAMELIST>
+
+	<SIG>14d0a01a97ad213c514f3fa86c34c159</SIG>
+</PACKAGE>

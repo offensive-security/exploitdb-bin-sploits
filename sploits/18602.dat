@@ -1,0 +1,5 @@
+GET / HTTP/1.1
+x-uid: 0000000000000000000
+x-protocol-version: 1.000000000000000000000000000000
+x-protocol-name: Epson Network Service Protocol
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="2.0"
+xmlns:blogChannel="http://www.example.com/blogChannelModule">
+<channel>
+<title>test feed</title>
+<item>
+<title>test post - create /tmp/created_file</title>
+<link>http://www.example2.com";perl -e "print 'could run anything here' " >
+"/tmp/created_file</link>
+<pubDate>Fri, 26 Oct 2007 14:10:25 +0300</pubDate>
+</item>
+</channel>
+</rss>

