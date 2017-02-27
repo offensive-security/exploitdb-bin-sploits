@@ -1,0 +1,18 @@
+From: Ulf <metaur@localhost>
+To: Ulf <metaur@localhost>
+Subject: Testmail 1: format string bug in the body parts' Content-Type parameters
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=bound
+
+--bound
+Content-Type: text/plain; formatstringbug="%n%n%n%n"
+
+Message in plain text
+
+--bound
+Content-Type: text/html; formatstringbug2="%n%n%n%n"
+
+<html><head><title>Message in HTML</title></head>
+<body>Message in HTML</body></html>
+
+--bound--
