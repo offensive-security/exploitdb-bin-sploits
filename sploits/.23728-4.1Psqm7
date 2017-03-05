@@ -1,7 +1,0 @@
-From: =?ISO-8859-1?L?%n%n%n%n?= <metaur@localhost>
-To: =?ISO-8859-1?L?%n%n%n%n?= <metaur@localhost>
-Subject: Testmail 2: format string bug in mail headers with unrecognized encoding
-MIME-Version: 1.0
-Content-Type: text/whatever
-
-Testmail 2
