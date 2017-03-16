@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.0">
+<script type="application/java-archive" xlink:href="http://somewhere/evil.jar"/>
+<text>Static text ...</text>
+</svg>
