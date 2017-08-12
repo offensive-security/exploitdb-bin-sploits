@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo  "Pragma: no-cache"
+echo "Content-type: text/plain;charset=utf-8"
+echo
+echo "1"
